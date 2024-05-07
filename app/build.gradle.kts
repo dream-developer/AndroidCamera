@@ -50,6 +50,16 @@ android {
 }
 
 dependencies {
+    // AccompanistのPermissionsライブラリ
+    implementation ("com.google.accompanist:accompanist-permissions:0.28.0")
+
+    // CameraXライブラリ
+    val cameraxVersion = "1.2.1"
+    implementation("androidx.camera:camera-core:${cameraxVersion}")
+    implementation ("androidx.camera:camera-camera2:${cameraxVersion}")
+    implementation ("androidx.camera:camera-lifecycle:${cameraxVersion}")
+    implementation ("androidx.camera:camera-view:${cameraxVersion}")
+    implementation ("androidx.camera:camera-extensions:${cameraxVersion}")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
